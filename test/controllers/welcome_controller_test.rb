@@ -6,7 +6,7 @@ class WelcomeControllerTest < ActionController::TestCase
   # end
 
   test "what is redis URL" do
-    puts ENV["REDIS_URL"]
+    puts "Interesting stuff: #{ENV["REDIS_URL"]}"
     assert true
   end
 end
