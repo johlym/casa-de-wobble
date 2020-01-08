@@ -11,7 +11,7 @@ class WelcomeControllerTest < ActionController::TestCase
   end
 
   test "tell me about config.cache_store" do
-    puts "config.cache_store: #{config.cache_store}"
+    puts "config.cache_store: #{Rails.application.config.cache_store}"
     assert true
   end
 end
