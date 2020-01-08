@@ -15,7 +15,10 @@
   "addons": ["heroku-postgresql","heroku-redis"],
   "environments": {
     "test": {
-      "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"]
+      "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"],
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
     }
   }
 }
