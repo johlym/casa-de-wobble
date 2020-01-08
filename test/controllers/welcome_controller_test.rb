@@ -9,4 +9,9 @@ class WelcomeControllerTest < ActionController::TestCase
     puts "Interesting stuff: #{ENV["REDIS_URL"]}"
     assert true
   end
+
+  test "tell me about config.cache_store" do
+    puts "config.cache_store: #{config.cache_store}"
+    assert true
+  end
 end
