@@ -1,5 +1,7 @@
 # ruby-rails-sample 2
 
+All this does is trigger a test 
+
 This is a simple Ruby app using the [Rails](http://rubyonrails.org) framework.
 
 ## Running Locally
