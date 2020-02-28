@@ -20,7 +20,7 @@
     },
     "review": {
       "scripts": {
-        "postdeploy": "echo $DATABASE_URL"
+        "postdeploy": "php ./lib/test.php"
       }
     }
   }
