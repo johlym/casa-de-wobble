@@ -17,11 +17,6 @@
     "test": {
       "env": {  "REDIS_VERSION": "4"  },
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"]
-    },
-    "review": {
-      "scripts": {
-        "postdeploy": "php ./lib/test.php"
-      }
     }
   }
 }
