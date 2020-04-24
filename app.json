@@ -10,12 +10,18 @@
   "env": {
     "RAILS_ENV": "production",
     "RACK_ENV": "production",
-    "RAILS_SERVE_STATIC_FILES": "true"
+    "RAILS_SERVE_STATIC_FILES": "true",
+    "SOME_CRAZY_VALUE": {
+      "required": true
+    }
   },
   "addons": ["heroku-postgresql","heroku-redis"],
   "environments": {
-    "test": {
-      "env": {  "REDIS_VERSION": "4"  },
+    "review": {
+      "env": {  
+        "REDIS_VERSION": "4",
+        "SOME_CRAZY_VALUE": ""
+      },
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"]
     }
   }
