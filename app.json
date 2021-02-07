@@ -23,6 +23,9 @@
         "SOME_CRAZY_VALUE": ""
       },
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"]
+    },
+    "review": {
+      "postdeploy": "echo $DATABASE_URL"
     }
   }
 }
