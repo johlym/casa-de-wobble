@@ -20,7 +20,10 @@
     "review": {
       "env": {  
         "REDIS_VERSION": "4",
-        "SOME_CRAZY_VALUE": ""
+        "SOME_CRAZY_VALUE": {
+          "required": false,
+          "value": ""
+        }
       },
       "addons": ["heroku-postgresql:in-dyno", "heroku-redis:in-dyno"]
     }
